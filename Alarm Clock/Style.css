@@ -1,0 +1,51 @@
+html {
+    background:#1f89d1 url(http://unsplash.it/1500/1000?image=881&blur=50);
+    background-size:cover;
+    font-family:'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    
+    margin: 0;
+    font-size: 2rem;
+    display:flex;
+    flex:1;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border:10px solid rgb(5, 49, 70);
+    border-radius:50%;
+    margin:50px auto;
+    position: relative;
+    padding: 1px;
+  }
+
+  .clock-face {
+    background-image: url("./milky-way-8149815.jpg");
+    position: relative;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .Sticks{
+    opacity: 40%;
+  }
+
+  .hand {
+    width:50%;
+    height:6px;
+    background:rgb(143, 100, 81);
+    position: absolute;
+    top:50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
